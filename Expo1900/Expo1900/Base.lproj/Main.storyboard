@@ -203,7 +203,6 @@
                                             <outlet property="imgView" destination="QYC-q3-hJp" id="nCy-W7-3pT"/>
                                             <outlet property="nameLabel" destination="hLk-bF-JJa" id="Lpe-10-VxR"/>
                                             <outlet property="shortDescriptionLabel" destination="UwM-KU-pXh" id="E0J-7q-fTS"/>
-                                            <segue destination="Nq0-xp-jvs" kind="show" identifier="detailView" id="Esz-sI-NF9"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -217,6 +216,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="한국의 출품작" id="kED-or-dlv"/>
+                    <connections>
+                        <segue destination="Nq0-xp-jvs" kind="show" identifier="detailView" id="PEb-2g-PK7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sod-pa-kw6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
