@@ -23,7 +23,7 @@ class CatalogViewModel {
     return exhibitionWorkCatalog.count
   }
   
-  func exhibitionWorkInfo(at index: Int) -> ExhibitionWork {
+  func exhibitionWork(at index: Int) -> ExhibitionWork {
     return exhibitionWorkCatalog[index]
   }
 }

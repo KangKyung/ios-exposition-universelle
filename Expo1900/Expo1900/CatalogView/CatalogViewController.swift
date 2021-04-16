@@ -20,7 +20,7 @@ class CatalogViewController: UIViewController, UITableViewDataSource, UITableVie
       if let cell = sender as? CatalogCell {
         // FIXME: - table view 클릭한 cell의 index를 가져오는 방법 변경 요망
         let cellIndex = Int(cell.frame.minY)/200
-        let exhibitionWorkCatalog = viewModel.exhibitionWorkInfo(at: cellIndex)
+        let exhibitionWorkCatalog = viewModel.exhibitionWork(at: cellIndex)
         detailvc?.viewModel.update(model: exhibitionWorkCatalog)
       }
     }
@@ -38,7 +38,7 @@ class CatalogViewController: UIViewController, UITableViewDataSource, UITableVie
       return UITableViewCell()
     }
     
-    let exhibitionWorkInfo = viewModel.exhibitionWorkInfo(at: indexPath.row)
+    let exhibitionWorkInfo = viewModel.exhibitionWork(at: indexPath.row)
     catalogCell.update(info: exhibitionWorkInfo)
     
     return catalogCell
