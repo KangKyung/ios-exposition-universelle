@@ -16,7 +16,7 @@
 
 ## 팀원
 
-- [KangKyung](https://github.com/KangKyung)
+- [KangKyung(개인 프로젝트)](https://github.com/KangKyung)
 
 ## 프로젝트 수행
 
